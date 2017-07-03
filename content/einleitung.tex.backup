@@ -1,0 +1,35 @@
+\chapter{Einführung und Ziele}
+
+Im Rahmen des Praktikums von \enquote{Enterprise Software Architektur} sollte ein Projekt durchgeführt werden. Das Thema
+war weitesgehend frei wählbar. Es sollten allerdings gängige Java EE Technologien eingesetzt werden.\\
+\\
+Ziel des Projektes ist es ein Framwork zu entwickeln, welches die Erstellung von Anwendungen zur Verwaltung 
+von Datenbeständen erleichtern soll. Folglich soll mit Hilfe des zu entwickelnden Frameworks die Erstellung von \ac{CRUD}-Anwendungen 
+bestimmten Typs umgesetzt werden können.
+Das Framework benötigt auf der einen Seite ein existierendes Datenmodel, welches ein Anwender zunächst erzeugen muss.
+Dieses Datenmodell implementiert ein bestimmtes Interface, welches es dem Framework erlaubt wichtige Informationen aus dem Model
+zu lesen und für die Benutzeroberfläche zur Verfügung zu stellen.
+Auf der anderen Seite muss ein Anwender zusätzlich Objekt-Vorlagen im \textit{XTHML}-Format erstellen. Dabei benötigt jede Klasse,
+die im Webinterface sichtbar sein soll, eine solche Vorlage. 
+Das Framework selbst verwendet das Datenmodel und die dazugehörigen Vorlagen um eine Benutzeroberfläche zu generieren, in welcher alle 
+\acs{CRUD}-Befehle ausgeführt werden können.Der Datenbestand wird mittels \ac{JPA} gesichert.\\
+\\
+Für das Projekt wurde zum einen das Framework selbst entworfen und zum anderen wurde eine Referenz-Implementierung
+des Datenmodells erstellt, die die Funktionalität des Frameworks unter Beweis stellt.
+
+
+Im Rahmen des Praktikums der Lehrveranstaltung \enquote{Enterprise Software Architektur} soll eine Webapplikation
+entstehen, bei der alle aktuell gängigen Technologien der Java Enterprise Edition eingesetzt werden sollen. 
+Dazu gehören zuallererst die Java Server Faces (JSF), ein Framework zur Entwicklung grafischer Oberflächen in Webanwendungen. 
+JSF kann durch den Einsatz von Primefaces um neue Funktionen erweitert werden. Primefaces bietet eine Demoseite\footnote{link zur demoseite} mit allen
+verfügbaren Komponenten mit implementierung an und dadurch können Einsteiger einen schnelleren Einstieg in die Entwicklung finden.
+Zur Persistierung der Daten soll die Java Persistance API (JPA) eingesetzt werden. JPA bietet eine Schnittstelle, um Objekte einfacher
+in eine Datenbank zu Übertragen, ohne viel SQL benutzen zu müssen. Alle Entitäten, die in einer Datenbank persistiert werden müssen,
+werden mit den entsprechenden Annotations versehen und mit Hilfe eines Entitätenmanagers können Objekte eines solchen Typs
+mit einer Zeile Code in die Datenbank geschrieben und herausgelesen werden. Für manche Anwendungsfälle soll eine Zugriffskontrolle stattfinden,
+sodass für die zu entwickelnde Applikation ein Login zur Benutzerauthentifizierung nötig ist. 
+
+Dazu
+gehören neben Java Server Faces auch Primefaces und die Java Persistance API (JPA). Die Anwendungsdomäne ist frei
+wählbar. Die Applikation soll eine Oberfläche bieten um CRUD-Operationen auf den Datenbeständen der Anwendungsdomäne
+auszuführen.

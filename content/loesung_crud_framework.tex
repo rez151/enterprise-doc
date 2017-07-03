@@ -1,0 +1,81 @@
+\chapter{CRUD-Framework}
+
+\section{Beschreibung und Lösungsstrategie}
+Die Grundidee hinter dem Framework basiert auf dem Gedanken, dass alle simplen \acs{CRUD}-Anwendungen ein gleiches Verhalten aufweisen, da sie die selbe Funktionalität
+zur Verfügung stellen, nämlich \textit{Lesen, Schreiben, Löschen und Ändern}.
+Wenn man eine weitestgehend individuelle Benutzeroberfläche außer Acht lässt, liegt der einzige Unterschied zwischen den Anwendungen im Inhalt und der Bedeutung der Datenmodelle.
+Darauf basierend braucht es auch an das Datenmodel angepasste Darstellungen in der Benutzeroberfläche.
+Das CRUD-Framework geht davon aus, dass ein Datenmodel einer \acs{CRUD}-Anwendung aus drei Komponenttypen besteht. 
+Die \enquote{Viewable}-Komponenten, die im Normalfall den Klassen des Datenmodels und den JPA-Entities. 
+Die \enquote{ModelLists}, die Sammlungen von Viewable-Komponenten darstellen. 
+Die \enquote{Associations}, die eine Erweiterung der ModelList sind. Sie bilden die Beziehungen zwischen den einzelnen Datenmodel-Elementen.\\
+\\
+Diese abstrakte Darsellung der Datenmodel-Elemente ist ausreichend um die gesamte Funktionalität einer CRUD-Anwendung abbilden zu
+können. Diese Eigenschaft macht sich das \acs{CRUD}-Framework zu nutze. Ein Anwender muss nur noch die definierte Schnittstelle in sein Datenmodel implementieren und 
+passende XHTML-Temlates für die Darstellung der Elemente erstellen.
+
+\section{Anforderungen}
+
+Das Framework muss in der Lage sein ein Datenmodell und dazugehörige Templates im XTHML Format entgegen zunehmen und eine funktionierende
+CRUD-Applikation daraus zu machen. Das Framework soll die gesamte Steuerung der Applikation übernehmen, indem es eine
+Reihe von Steuereinheiten und Interfaces zur Verfügung stellt. Einer der Hauptansprüche des Systems, ist eine
+automatische Erkennung der Relationen zwischen den Datenmodellen und die richtige Abbildung derer.
+Desweiteren sind Hauptanforderungen an das Framework eine Schnittstelle für Fehlermeldungen und Logging. 
+Die Daten werden vom System mittels JPA persistiert, sofern das Datenmodell JPA-Entitäten implementiert.
+
+\begin{footnotesize}
+	\begin{longtable}[l]{|p{3,0cm}| p{10,5cm} |}
+		\caption{Anforderungen CRUD Framework}
+		\label{tab:gui_model_desc}
+		\hline
+		\textbf{FA 1.1} &
+		Das System muss die Integration von nahezu beliebigen Datenmodellen ermöglichen.
+		\hline
+		\textbf{FA 1.2} &
+		Das System muss nach der Integration, die Erstellung von neuen Elementen des Datenmodels ermöglichen.
+		\hline
+		\textbf{FA 1.3} &
+		Das System muss die gängigen \acl{CRUD}-Operationen ermöglichen
+		\hline
+		\textbf{FA 2} & 
+		Das System muss in der Lage sein Relationen zwischen den Elementen des Datenmodels darstellen zu können
+		\hline
+		\textbf{FA 3.1} &
+		Die Objektansichten müssen für den Anwendungsfall angepasst agepast werden können
+		\hline
+		\textbf{FA 3.2} &
+		Innerhalb der Templates wird grundsätzlich die Variable \enquote{object} verwendet
+		\hline
+		\textbf{FA 4} &
+		Das System muss in der Lage sein Systemifromationen und Fehlermeldungen in der UI anzuzeigen
+		\hline
+		\textbf{FA 5} &
+		Das System muss die Benutzerauthentifizierung ermöglichen
+		\hline
+		\textbf{FA 6.1} &
+		Das System soll durch den Ansatz des \acs{JPA} die Datenpersistenz sicher stellen
+		\hline
+		\textbf{FA 6.2} &
+		Das System soll einen Austausch der Datenquelle ermöglichen 
+		\hline
+		 &
+		\hline
+		\textbf{NFA 1} &
+		 Die Antwortzeiten des Systems dürfen nicht länger als 5 Sekunden sein.
+		\hline
+		\textbf{NFA 2} &
+		Das System soll auf allen Systemen lauffähig sein, die einen Internet-Browser besitzen.
+		\hline
+		\textbf{NFA 3} &
+		Die \acs{UI} des Systems soll intuitiv bedienbar sein 
+		\hline
+		\textbf{NFA 4} &
+		Die Veränderung des Datenmodels für den Anwendungsfall soll ohne großen implementierungs Aufwand möglich sein
+		\hline
+		\textbf{NFA 5} &
+		Die Systemarchitecktur soll dokumentiert werden
+		\hline
+		\end{longtable}
+\end{footnotesize}
+
+

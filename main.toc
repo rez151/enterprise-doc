@@ -1,0 +1,29 @@
+\contentsline {chapter}{Inhaltsverzeichnis}{ii}{figure.caption.1}
+\contentsline {chapter}{Abbildungsverzeichnis}{iii}{figure.caption.1}
+\contentsline {chapter}{Tabellenverzeichnis}{v}{section*.2}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{vii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung und Ziele}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Anwendungsdom\IeC {\"a}ne - Wettbewerbsverwaltung}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Beschreibung}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Anforderungen}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Datenmodell}{4}{section.2.3}
+\contentsline {chapter}{\numberline {3}Gesamtsystem}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Komponentendiagramm}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Systembechreibung des CRUD-Frameworks}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Beschreibung und L\IeC {\"o}sungsstrategie}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Anforderungen}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Datenmodel des Frameworks}{8}{section.4.3}
+\contentsline {section}{\numberline {4.4}Templates}{8}{section.4.4}
+\contentsline {section}{\numberline {4.5}Controller}{10}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}MainController}{10}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}UI-Controller}{11}{subsection.4.5.2}
+\contentsline {paragraph}{\nonumberline ListViewController}{11}{section*.12}
+\contentsline {paragraph}{\nonumberline SelectViewController}{11}{section*.14}
+\contentsline {paragraph}{\nonumberline NewViewController}{12}{section*.16}
+\contentsline {paragraph}{\nonumberline UserLoginController}{13}{section*.18}
+\contentsline {subsection}{\numberline {4.5.3}Service-Controller}{13}{subsection.4.5.3}
+\contentsline {paragraph}{\nonumberline MessagesViewController}{14}{section*.19}
+\contentsline {paragraph}{\nonumberline Loader}{14}{section*.20}
+\contentsline {chapter}{\numberline {5}Entwurfsentscheidungen}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}Erweiterungsm\IeC {\"o}glichkeiten}{17}{chapter.6}
+\contentsline {chapter}{\numberline {7}Fazit}{19}{chapter.7}

@@ -1,0 +1,30 @@
+\chapter{Entwurfsentscheidungen}
+
+In diesem Kapitel werden die wichtigsten Architekturentscheidungen kurz erläutert.
+
+%\begin{footnotesize}
+%	\begin{longtable}[l]{|p{3,0cm}| p{10,5cm} |}
+%		\caption{Entwurfsentscheidungen}
+%		\label{tab:gui_model_desc}
+%		\hline
+%		\textbf{Primefaces} &
+%		Eine der Vorgaben war es mit \acs{JSF} zu arbeiten. Primefaces ist eine Erweiterung der \acl{JSF} um UI-Elemente und Valiedierungsmechanismen.
+%		\hline
+%		\textbf{Maven} & 
+%		Maven ist heutzutage ein sehr gängiges und auch praktisches Werkzeug um Projekt-Abhängigkeiten dynamisch und automatisch herunterzuladen und einzubinden.
+%		\hline
+%		\textbf{SinglePage Applikation} &
+%		Der Kompositionslastige Aufbau einer \acs{CRUD}-Anwendung hat die Entscheidung ein Stück weit abgenommen, da die einzelnen Templates ebenfalls nur als
+%		Komposition in immer allgemeineren Templates sind. Zusätzlich ist eine solche Ansicht intuitiv und benutzerfrundlich.
+%		\hline
+%		\textbf{JPA} &
+%		\ac{ORM} Frameworks sind heutzutage Gang und Gebe. \acs{JPA} ist hierbei ein Java EE eigenes \acs{ORM}, welches die Persistierung von Datenbeständen erheblich vereinfacht.
+%		Ein Vorteil ist zusätzlich, dass die darunterliegende tatsächliche Datenbank ausgetauscht werden kann. Wir haben uns für eine H2 Datenbank wegen seiner Schlankheit entschieden.
+%		\hline	
+%		\textbf{ManagedBean} &
+%		Wir haben unser System auf die \enquote{@Named} Annotation umgestellt und festgestellt, dass die Ladezeiten des Systems in der Initialisierungsphase bis zu fünf Sekunden in Anspruch nehmen können.
+%		Mit hoher Wahrscheinlichkeit, hat es mit irgendeiner Konfiguration unseres Systems zu tun. Allerdings wurden wir nach langem Suchen nicht fündig und haben uns für die
+%		ManagedBeans entschieden, die in unserem System eine sehr viel bessere Performance erbringen.
+%		\hline
+%		\end{longtable}
+%\end{footnotesize}

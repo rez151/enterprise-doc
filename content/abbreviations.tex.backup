@@ -1,0 +1,8 @@
+\chapter*{Abkürzungsverzeichnis\markboth{Abkürzungsverzeichnis}{}}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+
+\begin{acronym}
+ \acro{HTML}{Hypertext Markup Language}
+ \acro{JPA}{Java Persistence API}
+ \acro{JSF}{Java Server Faces}
+\end{acronym}

@@ -1,0 +1,10 @@
+\chapter{Erweiterungsmöglichkeiten}
+
+Eine möglich Erweiterung des Frameworks wäre eine Änderung der Schnittstelle. Anstatt wie bisher ein definiertes Interface anzubieten,
+könnte man die einzelnen Interface Funktionen auch als Annotationen umsetzen. Eine Klasse im Datenmodell müsste dann die Klasse mit einer
+Annotation versehen, die zeigt, dass diese in der Benutzeroberfläche angezeigt werden soll. 
+Zusätzlich gäbe es eine Annotation, die über den Assoziationen innerhalb der Klasse steht.
+Annotationen - erleichterte Implementierung von anderen Datenmodelen\\
+dynamisches erzeugen von Templates basierend auf Basisset - s.Ob\\
+
+Nicht gemacht Aufgrund des Zeitdrucks oder so... 

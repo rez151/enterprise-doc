@@ -1,0 +1,16 @@
+\chapter{Erweiterungsmöglichkeiten}
+
+Eine möglich Erweiterung des Frameworks wäre eine Änderung der Schnittstelle. Anstatt wie bisher ein definiertes Interface anzubieten,
+könnte man die einzelnen Interface Funktionen auch als Annotationen umsetzen. Eine Klasse im Datenmodell müsste dann die Klasse mit einer
+Annotation versehen, die zeigt, dass diese in der Benutzeroberfläche angezeigt werden soll. 
+Zusätzlich gäbe es eine Annotation, die über den Assoziationen innerhalb der Klasse steht. Die passenden Setter und Getter Methoden, die in der
+ModelList benötigt werden, wären über Reflection zugänglich. Der Typ der Klasse wäre über Reflection ebenfalls einfach zu erhalten.
+Diese Erweiterung nimmt dem Nutzer des Frameworks mehr Arbeit ab. Er muss lediglich die Assoziationen und die Klasse mit Annotationen versehen, anstatt
+Kenntnis über ein Interface zu haben.\\
+\\
+Eine weitere Erweiterungsmöglichkeit, ist die automatische Generierung von Templates. Basierend auf dem Quellcode müsste irgendwo hinterlegt sein,
+wie ein Datentyp interpretiert werden soll. Beispielsweise ist ein Boolean eine Checkbox, ein Datum ein Date-Element und ein String ein Textfeld.
+Diese Erweiterung ist allerdings recht restriktiv gegenüber der Benutzerobefläche, alternativ könnte man dem Nutzer die Möglichkeit geben über spezielle 
+Annotationen zu bestimmen auf welche Weise ein Attribut abgebildet werden soll. Alledings ist auch dies mit Restrktionen verbunden - Man gewinnt jedoch an Effizienz, da
+nun nur noch das Datenmodell implementiert werden muss.
+
